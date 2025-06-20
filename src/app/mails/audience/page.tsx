@@ -118,10 +118,10 @@ export default function AudiencePage() {
                         </div>
                     </div>
 
-                    {/* 操作按钮 */}
+                    {/* 操作按钮（灰色） */}
                     <div className="text-center">
                         <button
-                            className="bg-pink-600 hover:bg-pink-500 text-white px-8 py-2 rounded font-medium"
+                            className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-2 rounded font-medium"
                             onClick={handleDisplay}
                         >
                             选定并显示
@@ -138,7 +138,7 @@ export default function AudiencePage() {
             />
                     </div>
 
-                    {/* 下载按钮 */}
+                    {/* 下载按钮（灰色） */}
                     <div className="flex flex-wrap justify-around gap-4 mt-6">
                         <button className="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-700">
                             下载所选日期邮箱

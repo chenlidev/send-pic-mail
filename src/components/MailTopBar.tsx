@@ -22,7 +22,7 @@ const MailTopBar = () => {
                         className={clsx(
                             'relative text-sm font-medium px-4 py-2 transition-colors',
                             pathname === path
-                                ? 'text-black border-b-2 border-pink-500'
+                                ? 'text-black border-b-2 border-gray-800'
                                 : 'text-gray-500 hover:text-black'
                         )}
                     >

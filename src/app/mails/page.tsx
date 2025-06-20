@@ -15,7 +15,7 @@ const MailPage = () => {
 
     return (
         <div className="p-8 max-w-3xl mx-auto text-black">
-        {/* 邮件内容设置 */}
+            {/* 邮件内容设置 */}
             <div className="mb-8">
                 <label className="block mb-2 text-lg font-semibold">邮件回复内容设置</label>
                 <div className="bg-gray-100 rounded border h-[300px] p-4">
@@ -120,10 +120,9 @@ const MailPage = () => {
                 </div>
             </div>
 
-            {/* 保存按钮 */}
             <div className="text-center mt-8">
                 <button
-                    className="bg-pink-600 hover:bg-pink-500 text-white font-semibold px-8 py-2 rounded"
+                    className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-2 rounded"
                     onClick={handleSave}
                 >
                     保存设置

@@ -52,7 +52,7 @@ export default function DefaultImagePage() {
 
                 <button
                     onClick={handleReplaceImage}
-                    className="mt-4 bg-pink-600 hover:bg-pink-500 text-white px-6 py-2 rounded"
+                    className="mt-4 bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded"
                 >
                     替换默认图片
                 </button>

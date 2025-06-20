@@ -20,8 +20,8 @@ const SideBar = () => {
                     onClick={() => router.push(path)}
                     className={clsx(
                         'text-left text-sm font-medium px-3 py-2 rounded-md transition-colors',
-                        pathname === path
-                            ? 'text-pink-600 border-l-4 border-pink-500 bg-pink-50'
+                        pathname.startsWith(path)
+                            ? 'text-gray-800 border-l-4 border-gray-600 bg-gray-100'
                             : 'text-gray-600 hover:bg-gray-100'
                     )}
                 >
