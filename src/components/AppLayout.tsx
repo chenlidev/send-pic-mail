@@ -14,13 +14,15 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     } else if (pathname.startsWith('/pictures')) {
         TopBar = <PictureTopBar />
     }
-
+    const isAuthPage = pathname === '/login'
     return (
         <>
             {TopBar}
             <div className="flex min-h-[calc(100vh-48px)]">
-                <SideBar />
-                <main className="flex-1 p-6 bg-white">{children}</main>
+                {!isAuthPage && <SideBar />}
+                <main className={!isAuthPage ? 'flex-1 p-6 bg-white' : 'w-full'}>
+                    {children}
+                </main>
             </div>
         </>
     )
